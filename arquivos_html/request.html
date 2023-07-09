@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Lugar</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="index.html"><span class="navbar-brand mb-0 h1">Teatro CSI</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container text-center p-2">
+            <div class="row">
+                <h1>!!Reserve o lugar que você quer agora mesmo!!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis reprehenderit blanditiis eaque error
+                    omnis animi, quisquam eum quos! Ipsam culpa delectus consectetur provident unde alias dicta possimus
+                    in ad officiis.</p>
+            </div>
+            <div class="col-md-10 offset-md-1">
+                <form method="get" action="reservar">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Seu nome:</label>
+                        <input type='text' name='nome' class='form-control' id='nome'>
+                    </div>
+                    <input type="hidden" name="codLugar" class="form-control" id="codLugar" value="xxx">
+                    <div class="mb-3">
+                        <h1>Seu o lugar que deseja reservar é: {{codlugar}}</h1>
+                    </div>
+                    <button type='submit' class='btn btn-primary'>Reservar!</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
